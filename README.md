@@ -1,23 +1,48 @@
-# Corporate Identity
+# Gemeenteniconen.nl Redesign - Corporate Identity
 
 Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande huisstijl.
 
-De instructie vind je in: [WIKI](https://github.com/fdnd-task/look-and-feel-corporate-identity/wiki)
+Huidige versie: https://rowynn-eu.github.io/fdnd-gi-look-and-feel-corporate-identity/
+2de versie:     https://rowynn-eu.github.io/fdnd-gi-all-human-accessible-website/
+1ste versie:    https://rowynn-eu.github.io/fdnd-gi-client-website/
 
+## Inhoudsopgave
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+  * [Beschrijving](#beschrijving)
+  * [Gebruik](#gebruik)
+  * [Kenmerken](#kenmerken)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Voor OpenGemeenten heb ik een nieuwe ontwerp gemaakt met een [gedeelde stylesheet](https://github.com/rowynn-eu/fdnd-gi-look-and-feel-styleguide), samen gemaakt met [Melissa](https://github.com/melis5016), [Sami](https://github.com/Samielb), [Celeste](https://github.com/celeste0012).
+
+De bedoeling was dat wij als team, een ontwerp kunnen maken dat past binnen een huisstijl.
+
+Verder zijn er ook aandacht punten gebracht aan wettelijke eisen, zoals een privacy pagina en een 404 pagina.
+
+
+## Gebruik
+
+De website is bedoeld voor ontwikkelaars, ontwerpers, en mensen die verantwoordelijk zijn voor overheidscommunicatie. Op de website kan je **open** en **rechtenvrije** iconen vinden, vergelijken en downloaden. Als secundaire functie kan je ook illustraties vinden die de gebruiker kan stijlen naar hun eigen huisstijl. 
+
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+De website is gebouwd met [HTML](#HTML), [CSS](#CSS) en [JavaScript](#JavaScript), en bestaat uit acht pagina's. De inhoud van de website is vergelijkbaar met die van de opdrachtgever, alleen wat netter opgeschreven en met werkende functies die vermeld zijn in hun [feature-wishlist](https://github.com/fdnd-agency/gemeenteniconen.nl/wiki/Design-Challenge#feature-wishlist).
+
+### HTML
+
+### CSS
+
+### JavaScript
+
 
 ## Bronnen
 
+- [calc-size()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-size)
+
 ## Licentie
+
+De instructie vind je in: [WIKI](https://github.com/fdnd-task/look-and-feel-corporate-identity/wiki)
 
 This project is licensed under the terms of the [MIT license](./LICENSE).

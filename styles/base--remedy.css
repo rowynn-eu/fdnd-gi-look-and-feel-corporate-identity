@@ -1,0 +1,43 @@
+
+
+/* ************ */
+/* MARK: REMEDY */
+/* ************ */
+
+*, ::before, ::after { 
+    box-sizing: border-box;
+}
+
+img,
+picture,
+svg {
+  display: block;
+}
+
+body {
+    margin:0;
+}
+
+img, svg {
+    max-width:100%;
+    height: auto;
+}
+
+
+/* *********** */
+/* MARK: KLEUR */
+/* *********** */
+
+
+path {
+    fill: var(--fg-0);
+}
+
+*::selection {
+    color: var(--bg-0);
+    background: var(--accent);
+}
+
+span {
+    color: var(--accent);
+}
