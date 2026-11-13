@@ -45,4 +45,15 @@ De website is gebouwd met [HTML](#HTML), [CSS](#CSS) en [JavaScript](#JavaScript
 
 De instructie vind je in: [WIKI](https://github.com/fdnd-task/look-and-feel-corporate-identity/wiki)
 
+## Definition of done
+
+Deze opdracht is done als:
+
+- [ x ] Je hebt met een team een styleguide ontworpen en een gedeelde stylesheet gemaakt
+- [ x ] Je maakt gebruik van de gedeelde stylesheet, de CSS cascade, specificity en custom properties
+- [ ] Je hebt aantoonbaar gebruik gemaakt van Gestalt principes voor de layout en compositie
+- [ ] Je hebt een formulier met verschillende formulier elementen ontworpen en gemaakt
+- [ ] Je hebt gestructureerd en iteratief aan de hand van issues de feedback van de opdrachtgever verwerkt en deze getest voor eindgebruikers
+- [ ] Jouw website voldoet aan de huºisstijl van de opdrachtgever
+
 This project is licensed under the terms of the [MIT license](./LICENSE).
