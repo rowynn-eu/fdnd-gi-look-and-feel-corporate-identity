@@ -49,8 +49,8 @@ De instructie vind je in: [WIKI](https://github.com/fdnd-task/look-and-feel-corp
 
 Deze opdracht is done als:
 
-- [ x ] Je hebt met een team een styleguide ontworpen en een gedeelde stylesheet gemaakt
-- [ x ] Je maakt gebruik van de gedeelde stylesheet, de CSS cascade, specificity en custom properties
+- [x] Je hebt met een team een styleguide ontworpen en een gedeelde stylesheet gemaakt
+- [x] Je maakt gebruik van de gedeelde stylesheet, de CSS cascade, specificity en custom properties
 - [ ] Je hebt aantoonbaar gebruik gemaakt van Gestalt principes voor de layout en compositie
 - [ ] Je hebt een formulier met verschillende formulier elementen ontworpen en gemaakt
 - [ ] Je hebt gestructureerd en iteratief aan de hand van issues de feedback van de opdrachtgever verwerkt en deze getest voor eindgebruikers
