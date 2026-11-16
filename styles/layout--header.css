@@ -6,4 +6,10 @@ header {
             text-decoration: underline;
         }
     }
+
+
+    .button-menu, .button-github {
+        color: var(--accent-text);
+        background-color: var(--accent);
+    }
 }

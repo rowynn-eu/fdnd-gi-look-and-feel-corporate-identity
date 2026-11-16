@@ -40,3 +40,7 @@ path {
 span {
     color: var(--accent);
 }
+
+.button {
+    font-family: 'Geist';
+}
