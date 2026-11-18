@@ -1,5 +1,33 @@
 header {
 
+    /* ************* */
+    /* MARK: STYLING */
+    /* ************* */
+
+    z-index: 10;
+
+    color: inherit;
+    background-color: inherit;
+
+    padding: var(--spacing-s);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+
+    position: sticky;
+    top: 0;
+
+    border-bottom: 1px solid var(--fg-0);
+
+    picture {
+        width: clamp(8rem, 6.5455rem + 7.2727vw, 12rem);
+        height: auto;
+        flex-basis: 90%;
+    }
+
     a {
         text-decoration: none;
         &:hover, &:focus {
@@ -7,9 +35,66 @@ header {
         }
     }
 
+    /* ************* */
+    /* MARK: BUTTONS */
+    /* ************* */
+
+    nav:focus-within {
+        translate:0;
+    }
 
     .button-menu, .button-github {
         color: var(--accent-text);
         background-color: var(--accent);
+    }
+
+    .button-menu {
+        flex-basis: 10%
+    }
+
+
+    /* ********* */
+    /* MARK: NAV */
+    /* ********* */
+
+    nav {
+        z-index: 20;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+
+        background-color: var(--accent);
+
+        flex-basis: 100%;
+        flex-grow: 1;
+
+        & > a {
+            background-color: color-mix(in srgb, var(--fg-0) 40%, var(--accent) 60%);
+
+            min-width: 96px;
+            justify-content: center;
+            align-items: center;
+            padding: var(--spacing-sm);
+            transition-duration: 0.125s;
+            
+            border-radius: var(--rounded-xs);
+            border: none;
+
+            &:hover, &:focus {
+                text-decoration-line: underline;
+                translate: 0 -2px;
+            }
+        }
+    }
+
+    /* ************* */
+    /* MARK: @MEDIA */
+    /* ************* */
+
+
+    @media (min-width: 900px) {
+        button[id="mobile-menu"] {
+            display: none;
+        }
     }
 }
