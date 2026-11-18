@@ -15,7 +15,18 @@ svg {
 }
 
 body {
+    place-items: center;
     margin:0;
+
+    main, footer {
+        margin: 1rem;
+    }
+}
+
+article, section {
+    a:not(.button) {
+    color: color-mix(in srgb, var(--accent) 50%, var(--fg-0) 50%);
+    }
 }
 
 img, svg {
@@ -55,6 +66,7 @@ span {
     justify-content: center;
     align-items: center;
     padding: var(--spacing-sm);
+    transition-property: translate;
     transition-duration: 0.125s;
     
     border-radius: var(--rounded-xs);
