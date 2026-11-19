@@ -50,6 +50,13 @@
         }
     }
 
+    a.button, header a {
+        text-decoration: none;
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+
     /* *********** */
     /* MARK: KLEUR */
     /* *********** */
@@ -58,9 +65,6 @@
         fill: var(--fg-0);
     }
 
-    span {
-        color: var(--accent);
-    }
 
     ::selection {
         color: var(--accent-text);
@@ -74,6 +78,35 @@
 
     .button {
         font-family: 'Geist';
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: var(--spacing-sm);
+        transition-duration: 0.125s;
+        
+        border-radius: var(--rounded-xs);
+        border: none;
+
+        background-color: var(--bg-1);
+        width: 8rem;
+        height: 8rem;
+
+        > svg, img {
+            fill: var(--fg-0);
+            aspect-ratio: 1 / 1;
+            width: 50%;
+            height: 50%;
+        }
+
+        &:hover, &:focus {
+            box-shadow: 0.25rem 0.25rem 0rem 0rem var(--accent);
+            translate: 0 -0.25rem;
+        }
+
     }
 }
 
