@@ -160,4 +160,10 @@ header {
         }
 
     }
+
+    @media (min-width: 1000px) {
+        nav {
+            max-width: 800px;
+        }
+    }
 }
