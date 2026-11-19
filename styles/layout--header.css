@@ -9,7 +9,7 @@ header {
     color: inherit;
     background-color: inherit;
 
-    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
 
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +112,7 @@ header {
 
     @media (min-width: 900px) {
 
-        margin-top: var(--spacing-sm);
+        padding-top: var(--spacing-sm);
         padding-bottom: var(--spacing-sm);
 
         picture {
