@@ -1,13 +1,11 @@
+
+
 @layer styleguide, base;
 
+@layer base {
     /* ********** */
     /* MARK: BASE */
     /* ********** */
-
-@layer base {
-    /* ************ */
-    /* MARK: REMEDY */
-    /* ************ */
 
     *, ::before, ::after {
         box-sizing: border-box;
