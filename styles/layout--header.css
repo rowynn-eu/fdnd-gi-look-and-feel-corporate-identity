@@ -25,7 +25,7 @@ header {
         width: clamp(8rem, 6.5455rem + 7.2727vw, 12rem);
         height: auto;
         flex-basis: 90%;
-        padding-left: var(--spacing-sm);
+        margin-left: var(--spacing-md);
     }
     /* ************* */
     /* MARK: BUTTONS */
@@ -141,7 +141,7 @@ header {
                 height: fit-content;
                 padding: var(--spacing-xs);
                 margin-left: auto;
-                margin-right: var(--spacing-sm);
+                margin-right: var(--spacing-md);
             }
 
             & > a {
