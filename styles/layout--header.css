@@ -3,18 +3,17 @@ header {
     /* ************* */
     /* MARK: STYLING */
     /* ************* */
-
+    --accent-muted-alt:light-dark(#485364, #486ddb);
     z-index: 10;
 
     color: inherit;
     background-color: inherit;
 
-    padding: var(--spacing-s);
+    margin-top: var(--spacing-sm);
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     gap: 1em;
 
     position: sticky;
@@ -26,6 +25,7 @@ header {
         width: clamp(8rem, 6.5455rem + 7.2727vw, 12rem);
         height: auto;
         flex-basis: 90%;
+        padding-left: var(--spacing-sm);
     }
 
     a {
@@ -39,17 +39,22 @@ header {
     /* MARK: BUTTONS */
     /* ************* */
 
-    nav:focus-within {
-        translate:0;
-    }
-
     .button-menu, .button-github {
         color: var(--accent-text);
-        background-color: var(--accent);
+        background-color: var(--accent-muted-alt);
+        height: 40px;
+        width: 120px;
+    }
+
+
+    .button-github::before {
+        scale:0.9;
     }
 
     .button-menu {
-        flex-basis: 10%
+        z-index: 30;
+        flex-basis: 10%;
+        margin-right:var(--spacing-sm);
     }
 
 
@@ -60,21 +65,36 @@ header {
     nav {
         z-index: 20;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        place-items: center;
+        grid-template-columns: repeat(auto-fit, 120px);
+        /* grid-template-rows: repeat(auto, 110px); */
+        column-gap: var(--spacing-md);
+        row-gap: var(--spacing-sm);
+        justify-content: center;
 
         background-color: var(--accent);
 
         flex-basis: 100%;
         flex-grow: 1;
+        transition-duration: .125s;
+
+        overflow: hidden;
+
+        visibility: hidden;
+        max-height: 0;
+        padding: 0;
 
         & > a {
-            background-color: color-mix(in srgb, var(--fg-0) 40%, var(--accent) 60%);
+            font-family: 'Geist';
+            color: var(--accent-text);
+            background-color: var(--accent-muted-alt);
 
-            min-width: 96px;
+            min-width: 110px;
+            height: 40px;
+            text-align:center;
             justify-content: center;
             align-items: center;
             padding: var(--spacing-sm);
+            transition-property: translate;
             transition-duration: 0.125s;
             
             border-radius: var(--rounded-xs);
@@ -87,14 +107,61 @@ header {
         }
     }
 
+    .is-open {
+        border-top: 1px solid var(--fg-0);
+        visibility: visible;
+        max-height: unset;
+        padding: var(--spacing-md);
+    }
     /* ************* */
     /* MARK: @MEDIA */
     /* ************* */
 
 
     @media (min-width: 900px) {
+
+        padding-bottom: var(--spacing-sm);
+        picture {
+            flex-basis: none;
+        }
+
         button[id="mobile-menu"] {
             display: none;
         }
+
+        nav {
+            visibility: visible;
+            max-height: unset;
+            flex-basis: 0%;
+
+            background-color: unset;
+            transition-duration: none;
+            
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            align-items: center;
+
+            .button-github {
+                width: fit-content;
+                height: fit-content;
+                padding: var(--spacing-xs);
+                margin-left: auto;
+                margin-right: var(--spacing-sm);
+            }
+
+            & > a {
+                background-color: unset;
+
+                padding: unset;
+                height: fit-content;
+                width: fit-content;
+
+                &:hover, &:focus {
+                    translate: unset;
+                }
+            }
+
+        }
+
     }
 }
