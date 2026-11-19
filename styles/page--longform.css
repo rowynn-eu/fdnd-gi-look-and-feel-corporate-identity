@@ -1,0 +1,9 @@
+
+article, section {
+    width: 100%;
+
+    > * {
+        max-width: 70ch;
+        margin-inline: auto;
+    }
+}

@@ -1,15 +1,13 @@
 main {
+    display: grid;
     place-items: center;
-    justify-self: center;
-
     gap: var(--spacing-md);
 
-    section {
-        width: 100%;
-    }
+    width: min(100% - 2 * var(--spacing-md), 900px);
+    margin-inline: auto;
 
-    @media (min-width: 900px) {
-    width: 900px;    
+    article, section {
+        width: 100%;
     }
 
     .three-column {

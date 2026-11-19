@@ -1,5 +1,9 @@
 @layer styleguide, base;
 
+    /* ********** */
+    /* MARK: BASE */
+    /* ********** */
+
 @layer base {
     /* ************ */
     /* MARK: REMEDY */
@@ -33,17 +37,6 @@
         height: auto;
     }
 
-    h1, .heading-large {
-        font-size: clamp(1.5rem, 1.2241rem + 1.3793vw, 2rem);
-    }
-
-    h2, .heading-medium {
-        font-size: clamp(1.125rem, 0.9181rem + 1.0345vw, 1.5rem);
-    }
-
-    h3, .heading-small {
-        font-size: clamp(1rem, 0.931rem + 0.3448vw, 1.125rem);
-    }
 
     :is(article, section) a:not(.button) {
         color: color-mix(in srgb, var(--accent) 30%, var(--fg-0) 70%);
@@ -113,6 +106,10 @@
     }
 }
 
+    /* **************** */
+    /* MARK: STYLEGUIDE */
+    /* **************** */
+
 @layer styleguide {
     
     :is(button, .button) {
@@ -131,5 +128,17 @@
             text-decoration-line: underline;
             translate: 0 -2px;
         }
+    }
+
+    h1, .heading-large {
+        font-size: clamp(1.5rem, 1.2241rem + 1.3793vw, 2rem);
+    }
+
+    h2, .heading-medium {
+        font-size: clamp(1.125rem, 0.9181rem + 1.0345vw, 1.5rem);
+    }
+
+    h3, .heading-small {
+        font-size: clamp(1rem, 0.931rem + 0.3448vw, 1.125rem);
     }
 }
