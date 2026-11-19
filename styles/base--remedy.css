@@ -1,93 +1,99 @@
+@layer styleguide, base;
 
+@layer base {
+    /* ************ */
+    /* MARK: REMEDY */
+    /* ************ */
 
-/* ************ */
-/* MARK: REMEDY */
-/* ************ */
+    *, ::before, ::after {
+        box-sizing: border-box;
+    }
 
-*, ::before, ::after { 
-    box-sizing: border-box;
-}
+    html {
+        --outline: #e09252;
+    }
 
-img,
-picture,
-svg {
-  display: block;
-}
+    body {
+        margin: 0;
 
-body {
-    margin:0;
+        & main {
+            margin: 1rem;
+        }
+    }
 
-    main, footer {
-        margin: 1rem;
+    img, picture, svg {
+        display: block;
+    }
+
+    img, svg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1, .heading-large {
+        font-size: clamp(1.5rem, 1.2241rem + 1.3793vw, 2rem);
+    }
+
+    h2, .heading-medium {
+        font-size: clamp(1.125rem, 0.9181rem + 1.0345vw, 1.5rem);
+    }
+
+    h3, .heading-small {
+        font-size: clamp(1rem, 0.931rem + 0.3448vw, 1.125rem);
+    }
+
+    :is(article, section) a:not(.button) {
+        color: color-mix(in srgb, var(--accent) 30%, var(--fg-0) 70%);
+
+        &:focus {
+            color: var(--fg-0);
+        }
+    }
+
+    /* *********** */
+    /* MARK: KLEUR */
+    /* *********** */
+
+    path {
+        fill: var(--fg-0);
+    }
+
+    span {
+        color: var(--accent);
+    }
+
+    ::selection {
+        color: var(--accent-text);
+        background: var(--accent);
+    }
+
+    :focus {
+        outline-color: var(--outline);
+        outline-offset: 0.1em;
+    }
+
+    .button {
+        font-family: 'Geist';
     }
 }
-
-
-h1, .heading-large {
-    font-size: clamp(1.5rem, 1.2241rem + 1.3793vw, 2rem);
-}
-
-h2, .heading-medium {
-    font-size: clamp(1.125rem, 0.9181rem + 1.0345vw, 1.5rem);
-}
-
-h3, .heading-small {
-    font-size: clamp(1rem, 0.931rem + 0.3448vw, 1.125rem);
-}
-
-article, section {
-    a:not(.button) {
-    color: color-mix(in srgb, var(--accent) 50%, var(--fg-0) 50%);
-    }
-}
-
-img, svg {
-    max-width:100%;
-    height: auto;
-}
-
-/* *********** */
-/* MARK: KLEUR */
-/* *********** */
-
-
-path {
-    fill: var(--fg-0);
-}
-
-*::selection {
-    color: var(--accent-text);
-    background: var(--accent);
-}
-
-span {
-    color: var(--accent);
-}
-
-.button {
-    font-family: 'Geist';
-}
-
-
 
 @layer styleguide {
-
-    button, .button{
-    appearance:none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--spacing-sm);
-    transition-property: translate;
-    transition-duration: 0.125s;
     
-    border-radius: var(--rounded-xs);
-    border: none;
+    :is(button, .button) {
+        appearance: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--spacing-sm);
+        border: none;
+        border-radius: var(--rounded-xs);
+        transition-property: translate;
+        transition-duration: 0.125s;
 
-    &:hover, &:focus {
-        text-decoration-line: underline;
-        translate: 0 -2px;
-    }
-
+        &:hover,
+        &:focus {
+            text-decoration-line: underline;
+            translate: 0 -2px;
+        }
     }
 }

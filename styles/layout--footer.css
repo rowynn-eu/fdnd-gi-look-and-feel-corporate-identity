@@ -1,0 +1,29 @@
+footer {
+    
+    color: var(--accent-text);
+    background:var(--accent);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 288px);
+    justify-content: space-around;
+
+    margin-top: var(--spacing-xxl);
+
+    section {
+        margin: var(--spacing-sm);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    li {
+        padding-bottom: var(--spacing-md);
+    }
+
+    a {
+        color: inherit;
+    }
+
+}

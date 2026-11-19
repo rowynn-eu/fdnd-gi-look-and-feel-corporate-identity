@@ -9,7 +9,7 @@ header {
     color: inherit;
     background-color: inherit;
 
-    margin-top: var(--spacing-sm);
+    margin-top: var(--spacing-md);
 
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +52,7 @@ header {
     }
 
     .button-menu {
+        background-color: var(--accent);
         z-index: 30;
         flex-basis: 10%;
         margin-right:var(--spacing-sm);
@@ -120,7 +121,9 @@ header {
 
     @media (min-width: 900px) {
 
+        margin-top: var(--spacing-sm);
         padding-bottom: var(--spacing-sm);
+
         picture {
             flex-basis: none;
         }
@@ -142,6 +145,7 @@ header {
             align-items: center;
 
             .button-github {
+                background-color: var(--accent);
                 width: fit-content;
                 height: fit-content;
                 padding: var(--spacing-xs);
@@ -150,6 +154,7 @@ header {
             }
 
             & > a {
+                color: var(--fg-0);
                 background-color: unset;
 
                 padding: unset;

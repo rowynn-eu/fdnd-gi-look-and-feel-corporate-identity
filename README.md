@@ -40,6 +40,9 @@ De website is gebouwd met [HTML](#HTML), [CSS](#CSS) en [JavaScript](#JavaScript
 ## Bronnen
 
 - [calc-size()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-size)
+- [:is()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:is)
+- [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has)
+- [:not()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:not)
 
 ## Licentie
 
