@@ -40,4 +40,25 @@ main {
             }
         }
     }
+
+    /* ************ */
+    /* MARK: ZOEKEN */
+    /* ************ */
+
+    .search-style {
+        margin: var(--spacing-xxl) 0 var(--spacing-xl) 0;
+
+        label {
+            input {
+                flex-basis: 100;
+            }
+            span {
+            font-family: 'Geist';
+            color: var(--fg-2);
+            position: absolute;
+            translate: -1em -2em;
+            }
+        }
+    }
+
 }
