@@ -19,7 +19,7 @@ main {
             display: flex;
             flex-direction: column;
 
-            svg {
+            img, svg {
                 height: 3em;
                 width: auto;
                 order:-1;

@@ -70,7 +70,7 @@ header {
 
         flex-basis: 100%;
         flex-grow: 1;
-        transition-duration: .125s;
+        transition-duration: 0.125s;
 
         overflow: hidden;
 
@@ -131,7 +131,7 @@ header {
             flex-basis: 0%;
 
             background-color: unset;
-            transition-duration: none;
+            transition-duration: 0;
             
             display: grid;
             grid-template-columns: repeat(6, 1fr);
