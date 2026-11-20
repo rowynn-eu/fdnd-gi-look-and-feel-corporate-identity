@@ -1,18 +1,18 @@
 # Gemeenteniconen.nl Redesign - Corporate Identity
 
 Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande huisstijl.
-
-Huidige versie: https://rowynn-eu.github.io/fdnd-gi-look-and-feel-corporate-identity/
-2de versie:     https://rowynn-eu.github.io/fdnd-gi-all-human-accessible-website/
-1ste versie:    https://rowynn-eu.github.io/fdnd-gi-client-website/
+  
+Huidige versie: https://rowynn-eu.github.io/fdnd-gi-look-and-feel-corporate-identity/  
+2de versie:     https://rowynn-eu.github.io/fdnd-gi-all-human-accessible-website/  
+1ste versie:    https://rowynn-eu.github.io/fdnd-gi-client-website/  
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+  * [Beschrijving](#beschrijving) 
+  * [Gebruik](#gebruik) 
+  * [Kenmerken](#kenmerken) 
+  * [Bronnen](#bronnen) 
+  * [Licentie](#licentie) 
 
 ## Beschrijving
 Voor OpenGemeenten heb ik een nieuwe ontwerp gemaakt met een [gedeelde stylesheet](https://github.com/rowynn-eu/fdnd-gi-look-and-feel-styleguide), samen gemaakt met [Melissa](https://github.com/melis5016), [Sami](https://github.com/Samielb), [Celeste](https://github.com/celeste0012).
@@ -43,6 +43,9 @@ De website is gebouwd met [HTML](#HTML), [CSS](#CSS) en [JavaScript](#JavaScript
 - [:is()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:is)
 - [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has)
 - [:not()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:not)
+- [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/value)
+- [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
+- [keyup event](https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event)
 
 ## Licentie
 
