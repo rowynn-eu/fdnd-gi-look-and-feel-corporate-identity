@@ -3,9 +3,120 @@
 section:nth-of-type(2) {
 
     div:nth-of-type(1) {
-
         display: flex;
         gap: var(--spacing-xs);
+
+        /* ******************** */
+        /* MARK: VARIANT FILTER */
+        /* ******************** */
+
+        fieldset:nth-of-type(1) {
+
+            label {
+                display: grid;
+                grid-auto-flow: column;
+                justify-content: start;
+                align-items: center;
+            }
+
+            input {
+                appearance: none;
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* Code/Design Review: Ik weet niet hoe ik dit moet ontwerpen zonder de mask property. */
+
+            /* ******************* */
+            /* MARK: @SUPPORT MASK */
+            /* ******************* */
+
+            @supports (mask: none) {
+
+                label:has(input:checked)::before {
+                    background-color: var(--accent-text);
+                }
+
+                label:nth-of-type(1)::before {
+                    content: '' / 'Voorbeeld';
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+
+                    filter: none;
+                    background-image: none;
+
+                    background-color: var(--fg-2);
+                    mask-image: url("../iconen/line/monitorduurzaamheid.svg");
+                    mask-repeat: no-repeat;
+                    mask-position: center;
+                    mask-size: contain;
+                }
+
+                label:nth-of-type(2)::before {
+                    content: '' / 'Voorbeeld';
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+
+                    filter: none;
+                    background-image: none;
+
+                    background-color: var(--fg-2);
+                    mask-image: url("../iconen/regular/monitorduurzaamheid.svg");
+                    mask-repeat: no-repeat;
+                    mask-position: center;
+                    mask-size: contain;
+                }
+
+                label:nth-of-type(3)::before {
+                    content: '' / 'Voorbeeld';
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+
+                    filter: none;
+                    background-image: none;
+
+                    background-color: var(--fg-2);
+                    mask-image: url("../iconen/fill/monitorduurzaamheid.svg");
+                    mask-repeat: no-repeat;
+                    mask-position: center;
+                    mask-size: contain;
+                }
+
+                label:nth-of-type(4)::before {
+                    content: '' / 'Voorbeeld';
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+
+                    filter: none;
+                    background-image: none;
+
+                    background-color: var(--fg-2);
+                    mask-image: url("../iconen/diapositive/monitorduurzaamheid.svg");
+                    mask-repeat: no-repeat;
+                    mask-position: center;
+                    mask-size: contain;
+
+                    z-index: 2
+                }
+
+                label:nth-of-type(4)::after {
+                    content: '';
+                    position: absolute;
+                    width: 2em;
+                    height: 2em;
+                    border-radius: var(--spacing-xs);
+                    background-color: var(--accent);
+
+                    z-index: 1;
+                }
+            }
+
+        }
     }
 
     ul:nth-of-type(1) {
@@ -13,15 +124,15 @@ section:nth-of-type(2) {
         padding-left: 0;
 
         display:grid;
-        grid-template-columns: repeat(auto-fit, 8em);
+        grid-template-columns: repeat(auto-fit, 8rem);
         justify-content: center;
         align-items: center;
         gap: var(--spacing-md);
 
         button {
             aspect-ratio: 1 / 1;
-            width: 8em;
-            height: 8em;
+            width: 8rem;
+            height: 8rem;
 
             display: flex;
             flex-direction: column;

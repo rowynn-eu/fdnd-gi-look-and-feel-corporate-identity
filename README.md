@@ -46,6 +46,8 @@ De website is gebouwd met [HTML](#HTML), [CSS](#CSS) en [JavaScript](#JavaScript
 - [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/value)
 - [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
 - [keyup event](https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event)
+- [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@supports)
+- [mask](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/mask)
 
 ## Licentie
 
@@ -57,9 +59,9 @@ Deze opdracht is done als:
 
 - [x] Je hebt met een team een styleguide ontworpen en een gedeelde stylesheet gemaakt
 - [x] Je maakt gebruik van de gedeelde stylesheet, de CSS cascade, specificity en custom properties
-- [ ] Je hebt aantoonbaar gebruik gemaakt van Gestalt principes voor de layout en compositie
-- [ ] Je hebt een formulier met verschillende formulier elementen ontworpen en gemaakt
+- [x] Je hebt aantoonbaar gebruik gemaakt van Gestalt principes voor de layout en compositie
+- [x] Je hebt een formulier met verschillende formulier elementen ontworpen en gemaakt
 - [ ] Je hebt gestructureerd en iteratief aan de hand van issues de feedback van de opdrachtgever verwerkt en deze getest voor eindgebruikers
-- [ ] Jouw website voldoet aan de huºisstijl van de opdrachtgever
+- [ ] Jouw website voldoet aan de huisstijl van de opdrachtgever
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
