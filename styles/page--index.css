@@ -49,6 +49,7 @@ main {
             svg {width: 3rem;}
 
             li {
+                display: inherit;
                 place-items: center;
                 background: var(--bg-1);
                 border-radius: var(--rounded-xs);
