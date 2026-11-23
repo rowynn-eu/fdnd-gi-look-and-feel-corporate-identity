@@ -10,6 +10,11 @@ main {
         width: 100%;
     }
 
+    section {
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-xxl);
+    }
+
     .three-column {
         display: grid;
         grid-template-columns: 1fr;

@@ -41,7 +41,7 @@ main {
     /* MARK: RECENT */
     /* ************ */
 
-    section:nth-of-type(1) > ul {
+    section:nth-of-type(2) > ul {
             display: grid;
             grid-template-columns: repeat(auto-fit, 6rem);
             gap: var(--spacing-sm);
