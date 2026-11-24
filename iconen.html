@@ -42,7 +42,7 @@
                 </picture>
             </a>
             
-            <button id="mobile-menu" type="button" class="button button-menu">Menu</button>
+            <button id="mobileMenu" type="button" class="button button-menu">Menu</button>
 
             <nav>
                 <a href="./iconen.html">Iconen</a>
@@ -133,27 +133,29 @@
                     </form>
                 </search>
 
-                <div>
+                <label class="button accent" for="togglePanel">Toon Filters</label>
+                <input type="checkbox" name="toggle-filter" id="togglePanel">
+                <div class="filter-panel">
                     <fieldset>
                         <legend>Variant</legend>
 
                         <label class="label-filter">
-                            <input type="radio" name="radio-variant" value="option-1" checked>
+                            <input type="radio" name="radio-variant" value="line" checked>
                             Line
                         </label>
 
                         <label class="label-filter">
-                            <input type="radio" name="radio-variant" value="option-2">
+                            <input type="radio" name="radio-variant" value="regular">
                             Regular
                         </label>
 
                         <label class="label-filter">
-                            <input type="radio" name="radio-variant" value="option-3">
+                            <input type="radio" name="radio-variant" value="fill">
                             Fill
                         </label>
 
                         <label class="label-filter">
-                            <input type="radio" name="radio-variant" value="option-4">
+                            <input type="radio" name="radio-variant" value="diapositive">
                             Diapositive
                         </label>
                     </fieldset>
@@ -162,17 +164,17 @@
                         <legend>Sorteer</legend>
 
                         <label class="label-filter">
-                            <input type="radio" name="radio-sort" value="option-1" checked>
+                            <input type="radio" name="radio-sort" value="a-z" checked>
                             A-Z
                         </label>
 
                         <label class="label-filter">
-                            <input type="radio" name="radio-sort" value="option-2">
+                            <input type="radio" name="radio-sort" value="z-a">
                             Z-A
                         </label>
 
                         <label class="label-filter">
-                            <input type="radio" name="radio-sort" value="option-3">
+                            <input type="radio" name="radio-sort" value="recent">
                             Recent
                         </label>
                     </fieldset>
@@ -181,42 +183,42 @@
                         <legend class="filter-legend">Thema</legend>
 
                         <label class="label-filter">
-                            <input type="checkbox" name="checkbox-1" checked>
+                            <input type="checkbox" name="checkbox-thema" value="all" checked>
                             Alles
                         </label>
                         
                         <label class="label-filter">
-                            <input type="checkbox" name="checkbox-1">
+                            <input type="checkbox" name="checkbox-thema" value="duurzaam">
                             Duurzaamheid
                         </label>
 
                         <label class="label-filter">
-                            <input type="checkbox" name="checkbox-2">
+                            <input type="checkbox" name="checkbox-thema" value="werkzaken">
                             Werk, Inkomen
                         </label>
 
                         <label class="label-filter">
-                            <input type="checkbox" name="chekcbox-3">
+                            <input type="checkbox" name="checkbox-thema" value="burgerzaken">
                             Burgerzaken
                         </label>
 
                         <label class="label-filter">
-                            <input type="checkbox" name="chekcbox-3">
+                            <input type="checkbox" name="checkbox-thema" value="ondersteuning">
                             Ondersteuning
                         </label>
 
                         <label class="label-filter">
-                            <input type="checkbox" name="chekcbox-3">
+                            <input type="checkbox" name="checkbox-thema" value="buurtzaken">
                             Buurtzaken
                         </label>
 
                         <label class="label-filter">
-                            <input type="checkbox" name="chekcbox-3">
+                            <input type="checkbox" name="checkbox-thema" value="meldingen">
                             Meldingen
                         </label>
 
                         <label class="label-filter">
-                            <input type="checkbox" name="chekcbox-3">
+                            <input type="checkbox" name="checkbox-thema" value="informatief">
                             Informatief
                         </label>
                     </fieldset>

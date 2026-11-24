@@ -1,5 +1,5 @@
 const menuNav = document.querySelector("nav")
-const menuClick = document.querySelector("#mobile-menu")
+const menuClick = document.querySelector("#mobileMenu")
 
 menuClick.addEventListener("click", openMenu)
 

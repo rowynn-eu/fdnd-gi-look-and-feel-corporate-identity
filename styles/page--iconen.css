@@ -1,38 +1,75 @@
-/* ₍^. .^₎Ⳋ */
 
 section:nth-of-type(2) {
 
-    div:nth-of-type(1) {
-        display: flex;
-        gap: var(--spacing-xs);
 
-        /* ******************** */
-        /* MARK: VARIANT FILTER */
-        /* ******************** */
+    /* **************************** */
+    /* MARK: UGLY CSS DROPDOWN HACK */
+    /* **************************** */
+
+    label[for="togglePanel"] {
+        font-size: 1rem;
+        font-family: 'Geist';
+        width: 100%;
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+
+    }
+
+    input[id="togglePanel"] {
+        width: 0;
+        height: 0;
+        margin-bottom: var(--spacing-xs);
+        &:checked ~ .filter-panel {
+            display:flex;
+        }
+    }
+
+    @media (min-width: 900px) {
+        label[for="togglePanel"] {
+            display: none;
+        }
+
+        input[id="togglePanel"] {
+            display: none;
+        
+            &:checked ~ .filter-panel {
+                display: flex;
+            }
+
+            & ~ .filter-panel {
+                display:flex;
+            }
+        }
+    }
+
+        /* ******************* */
+        /* MARK: @SUPPORT MASK */
+        /* ******************* */
+
+    div:nth-of-type(1) {
+        display: none;
+        gap: var(--spacing-xs);
+        padding-left: 24px;
 
         fieldset:nth-of-type(1) {
 
-            label {
-                display: grid;
-                grid-auto-flow: column;
-                justify-content: start;
-                align-items: center;
-            }
-
-            input {
-                appearance: none;
-                opacity: 0;
-                width: 0;
-                height: 0;
-            }
-
             /* Code/Design Review: Ik weet niet hoe ik dit moet ontwerpen zonder de mask property. */
 
-            /* ******************* */
-            /* MARK: @SUPPORT MASK */
-            /* ******************* */
-
             @supports (mask: none) {
+
+                label {
+                    display: grid;
+                    grid-auto-flow: column;
+                    justify-content: start;
+                    align-items: center;
+                }
+
+                input {
+                    appearance: none;
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
 
                 label:has(input:checked)::before {
                     background-color: var(--accent-text);
@@ -115,9 +152,13 @@ section:nth-of-type(2) {
                     z-index: 1;
                 }
             }
-
         }
     }
+
+
+    /* **************** */
+    /* MARK: ICONS GRID */
+    /* **************** */
 
     ul:nth-of-type(1) {
         list-style: none;
@@ -150,3 +191,5 @@ section:nth-of-type(2) {
         }
     }
 }
+
+/* ₍^. .^₎Ⳋ */

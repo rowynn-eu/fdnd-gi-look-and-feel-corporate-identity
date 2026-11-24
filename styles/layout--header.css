@@ -121,7 +121,7 @@ header {
             flex-basis: none;
         }
 
-        button[id="mobile-menu"] {
+        button[id="mobileMenu"] {
             display: none;
         }
 
