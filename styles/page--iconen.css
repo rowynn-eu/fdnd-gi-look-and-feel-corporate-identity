@@ -12,15 +12,19 @@ section:nth-of-type(2) {
         width: 100%;
         padding-left: var(--spacing-md);
         padding-right: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
 
     }
 
     input[id="togglePanel"] {
         width: 0;
         height: 0;
-        margin-bottom: var(--spacing-xs);
+
         &:checked ~ .filter-panel {
             display:flex;
+        }
+        &:focus-visible + label[for="togglePanel"]  {
+            outline: 0.15rem solid var(--outline);
         }
     }
 
@@ -49,7 +53,6 @@ section:nth-of-type(2) {
     div:nth-of-type(1) {
         display: none;
         gap: var(--spacing-xs);
-        padding-left: 24px;
 
         fieldset:nth-of-type(1) {
 
