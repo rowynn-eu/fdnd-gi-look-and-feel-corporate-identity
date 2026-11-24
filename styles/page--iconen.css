@@ -14,6 +14,8 @@ section:nth-of-type(2) {
         padding-right: var(--spacing-md);
         margin-bottom: var(--spacing-md);
 
+        cursor: pointer;
+
     }
 
     input[id="togglePanel"] {
@@ -65,6 +67,7 @@ section:nth-of-type(2) {
                     grid-auto-flow: column;
                     justify-content: start;
                     align-items: center;
+                    transition-duration: 0.125s;
                 }
 
                 input {
@@ -74,86 +77,68 @@ section:nth-of-type(2) {
                     height: 0;
                 }
 
-                label:has(input:checked)::before {
-                    background-color: var(--accent-text);
+                label:has(input:checked) {
+                    &::after {
+                        background-color: var(--accent);
+                        transition-duration: 0.125s;
+                    }
+                    &::before {
+                        background-color: var(--accent-text);
+                    }
+                }
+
+                label::before {
+                    content: '' / 'Voorbeeld';
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+
+                    filter: none;
+                    background-image: none;
+                    background-color: var(--fg-1);
+
+                    mask-repeat: no-repeat;
+                    mask-position: center;
+                    mask-size: contain;
+                    z-index: 1;
                 }
 
                 label:nth-of-type(1)::before {
-                    content: '' / 'Voorbeeld';
-                    display: inline-block;
-                    width: 2rem;
-                    height: 2rem;
-
-                    filter: none;
-                    background-image: none;
-
-                    background-color: var(--fg-2);
                     mask-image: url("../iconen/line/monitorduurzaamheid.svg");
-                    mask-repeat: no-repeat;
-                    mask-position: center;
-                    mask-size: contain;
+
                 }
 
                 label:nth-of-type(2)::before {
-                    content: '' / 'Voorbeeld';
-                    display: inline-block;
-                    width: 2rem;
-                    height: 2rem;
-
-                    filter: none;
-                    background-image: none;
-
-                    background-color: var(--fg-2);
                     mask-image: url("../iconen/regular/monitorduurzaamheid.svg");
-                    mask-repeat: no-repeat;
-                    mask-position: center;
-                    mask-size: contain;
                 }
 
                 label:nth-of-type(3)::before {
-                    content: '' / 'Voorbeeld';
-                    display: inline-block;
-                    width: 2rem;
-                    height: 2rem;
-
-                    filter: none;
-                    background-image: none;
-
-                    background-color: var(--fg-2);
                     mask-image: url("../iconen/fill/monitorduurzaamheid.svg");
-                    mask-repeat: no-repeat;
-                    mask-position: center;
-                    mask-size: contain;
                 }
 
                 label:nth-of-type(4)::before {
-                    content: '' / 'Voorbeeld';
-                    display: inline-block;
-                    width: 2rem;
-                    height: 2rem;
-
-                    filter: none;
-                    background-image: none;
-
-                    background-color: var(--fg-2);
                     mask-image: url("../iconen/diapositive/monitorduurzaamheid.svg");
-                    mask-repeat: no-repeat;
-                    mask-position: center;
-                    mask-size: contain;
+                    background-color: var(--bg-2);
 
                     z-index: 2
                 }
 
-                label:nth-of-type(4)::after {
-                    content: '';
-                    position: absolute;
-                    width: 2em;
-                    height: 2em;
-                    border-radius: var(--spacing-xs);
-                    background-color: var(--accent);
+                label:nth-of-type(4){
+                
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 2em;
+                        height: 2em;
+                        border-radius: var(--spacing-xs);
+                        background-color: var(--fg-2);
+                        transition-duration: 0.125s;
 
-                    z-index: 1;
+                        z-index: 1;
+                    }
                 }
+
+
             }
         }
     }
