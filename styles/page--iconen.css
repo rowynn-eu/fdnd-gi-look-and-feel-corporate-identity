@@ -1,12 +1,38 @@
-
 section:nth-of-type(2) {
 
+    /* ********************** */
+    /* MARK: VARIANT :CHECKED */
+    /* ********************** */
 
-    /* **************************** */
-    /* MARK: UGLY CSS DROPDOWN HACK */
-    /* **************************** */
+    /* **************************************************************************************** */
+    /* o.b.v. Celeste0012 (& Sanne?)'s code  */
+    /* https://celeste0012.github.io/look-and-feel-corporate-identity/styles/icons.css          */
+
+    /*  Wat hier gebeurt, volgens mijn begrip: 
+        Voor elke input element dat de HTML pagina bevat (zodat het door de hele DOM kan zoeken), 
+        als het NIET aangevinkt is, dan krijgt elk element die de 
+        doorgegeven class naam bevat, een 'display:none property'                               */
+    /* **************************************************************************************** */
+
+    &:has(input[value="regular"]:not(:checked)) .icons-regular,
+
+    &:has(input[value="line"]:not(:checked)) .icons-line,
+
+    &:has(input[value="fill"]:not(:checked)) .icons-fill,
+    
+    &:has(input[value="diapositive"]:not(:checked)) .icons-diapositive {
+        display: none;
+    }
+
+    /* **************************************************************************************** */
+
+    /* *********************** */
+    /* MARK: CSS DROPDOWN HACK */
+    /* *********************** */
 
     label[for="togglePanel"] {
+        display: flex;
+        gap: 0.25em;
         font-size: 1rem;
         font-family: 'Geist';
         width: 100%;
@@ -15,6 +41,10 @@ section:nth-of-type(2) {
         margin-bottom: var(--spacing-md);
 
         cursor: pointer;
+
+        &::before {
+            content: 'Toon';
+        }
 
     }
 
@@ -25,6 +55,11 @@ section:nth-of-type(2) {
         &:checked ~ .filter-panel {
             display:flex;
         }
+
+        &:checked ~ label[for="togglePanel"]::before {
+            content: 'Verberg';
+        }
+
         &:focus-visible + label[for="togglePanel"]  {
             outline: 0.15rem solid var(--outline);
         }
@@ -48,15 +83,19 @@ section:nth-of-type(2) {
         }
     }
 
-        /* ******************* */
-        /* MARK: @SUPPORT MASK */
-        /* ******************* */
+        /* ********************** */
+        /* MARK: FILTER ICON MASK */
+        /* ********************** */
 
     div:nth-of-type(1) {
         display: none;
         gap: var(--spacing-xs);
 
-        fieldset:nth-of-type(1) {
+        > * {
+            height: fit-content;
+        }
+
+        fieldset:nth-of-type(2) {
 
             /* Code/Design Review: Ik weet niet hoe ik dit moet ontwerpen zonder de mask property. */
 
@@ -143,12 +182,14 @@ section:nth-of-type(2) {
         }
     }
 
+    
+
 
     /* **************** */
     /* MARK: ICONS GRID */
     /* **************** */
 
-    ul:nth-of-type(1) {
+    ul {
         list-style: none;
         padding-left: 0;
 
@@ -166,6 +207,8 @@ section:nth-of-type(2) {
             display: flex;
             flex-direction: column;
 
+            row-gap: var(--spacing-sm);
+
             > svg {
                 fill: var(--fg-0);
                 aspect-ratio: 1 / 1;
@@ -176,6 +219,29 @@ section:nth-of-type(2) {
             &:hover {
                 box-shadow: 0.25rem 0.25rem 0rem 0rem var(--accent);
             }
+        }
+    }
+}
+
+
+
+.diapositive {
+    transition-duration: 0.125s;
+
+    svg { 
+        background-color: var(--fg-2);
+        border-radius: var(--rounded-sm);
+
+        path {
+            fill: var(--bg-2);
+        }
+    }
+
+    &:hover svg {
+        background-color: var(--accent);
+
+        path {
+            fill: var(--accent-text);
         }
     }
 }

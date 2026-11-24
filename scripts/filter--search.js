@@ -10,9 +10,8 @@
 
 // Stap 3c: Komt 'q' overeen met de titel van een class of wat in het 'span element staat? 
 
-// 
+// Stap 3d: Toon de iconen met de juiste title (q="aanmelden")
 
+// Stap 4 Update de URL live met de invoer van de gebruiker per tik
 
-// Stap 2. If else statement...
-
-// Stap 2a: 
+// Stap 5
