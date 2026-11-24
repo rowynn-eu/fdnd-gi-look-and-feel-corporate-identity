@@ -15,20 +15,36 @@ section:nth-of-type(2) {
     /* **************************************************************************************** */
 
     &:has(input[value="regular"]:not(:checked)) .icons-regular,
-
     &:has(input[value="line"]:not(:checked)) .icons-line,
-
     &:has(input[value="fill"]:not(:checked)) .icons-fill,
-    
     &:has(input[value="diapositive"]:not(:checked)) .icons-diapositive {
         display: none;
     }
 
     /* **************************************************************************************** */
 
-
     &:has(input[value="z-a"]:checked) ul {
         direction:rtl;
+    }
+
+    .duurzaam, .werkzaken, .burgerzaken, .ondersteuning, .buurtzaken, .meldingen, .informatief {
+        display: none;
+    }
+
+    &:has(input[value="duurzaam"]:checked) .duurzaam,
+    &:has(input[value="werkzaken"]:checked) .werkzaken,
+    &:has(input[value="burgerzaken"]:checked) .burgerzaken,
+    &:has(input[value="ondersteuning"]:checked) .ondersteuning,
+    &:has(input[value="buurtzaken"]:checked) .buurtzaken,
+    &:has(input[value="meldingen"]:checked) .meldingen,
+    &:has(input[value="informatief"]:checked) .informatief  {
+        display: flex;
+    }
+
+    &:has(input[value="all"]:checked) {
+        .duurzaam, .werkzaken, .burgerzaken, .ondersteuning, .buurtzaken, .meldingen, .informatief {
+            display: flex;
+        }
     }
 
     /* *********************** */
