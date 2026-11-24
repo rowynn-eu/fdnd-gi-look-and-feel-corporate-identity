@@ -26,6 +26,11 @@ section:nth-of-type(2) {
 
     /* **************************************************************************************** */
 
+
+    &:has(input[value="z-a"]:checked) ul {
+        direction:rtl;
+    }
+
     /* *********************** */
     /* MARK: CSS DROPDOWN HACK */
     /* *********************** */
@@ -182,16 +187,13 @@ section:nth-of-type(2) {
         }
     }
 
-    
-
-
     /* **************** */
     /* MARK: ICONS GRID */
     /* **************** */
 
     ul {
         list-style: none;
-        padding-left: 0;
+        padding: 0;
 
         display:grid;
         grid-template-columns: repeat(auto-fit, 8rem);
@@ -200,6 +202,7 @@ section:nth-of-type(2) {
         gap: var(--spacing-md);
 
         button {
+            direction:ltr;
             aspect-ratio: 1 / 1;
             width: 8rem;
             height: 8rem;
