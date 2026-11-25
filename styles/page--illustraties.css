@@ -1,4 +1,4 @@
-section:nth-of-type(2) {
+main > section:nth-of-type(2) {
     ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, 288px);

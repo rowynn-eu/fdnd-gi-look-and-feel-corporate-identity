@@ -1,4 +1,4 @@
-section:nth-of-type(2) {
+main > section:nth-of-type(2) {
 
     /* ********************** */
     /* MARK: VARIANT :CHECKED */
