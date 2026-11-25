@@ -36,7 +36,13 @@ De website is gebouwd met [HTML](#HTML), [CSS](#CSS) en [JavaScript](#JavaScript
 ### HTML
 
 #### 404 Pagina
+
+Er is een 404 pagina bij gekomen voor het ontwerp, omdat het ontbreekt en beter uitstraalt dat het van een echte website is met een echte huisstijl.
+
 <img width="1824" height="1892" alt="2026-11-25 09 45 19 127 0 0 1 a827f4ec4af2" src="https://github.com/user-attachments/assets/3b21e232-aeca-49d2-a1d7-f38fa1763b6a" />
+
+Er is een privacyverklaring pagina erbij gekomen, niet alleen omdat het wettelijk verplicht is, maar omdat het ook ontbreekt bij de huidige website.
+
 
 #### Privacy Verklaring Pagina~
 <img width="1824" height="5418" alt="2026-11-25 09 43 10 127 0 0 1 fa509db1e678" src="https://github.com/user-attachments/assets/30515d85-70be-4e3d-83d9-a8c80f2c750e" />
