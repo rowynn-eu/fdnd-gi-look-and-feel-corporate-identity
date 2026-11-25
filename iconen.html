@@ -23,7 +23,6 @@
 
         <script src="./scripts/controls--hamburger.js" defer></script>
         <script src="./scripts/filter--search.js" defer></script>
-        <script src="./scripts/filter--mathijs-search.js" defer></script>
 
     </head>
     <body>
@@ -118,13 +117,13 @@
             <!-- MARK: CONTROLS -->
             <!-- ************** -->
 
-            <section>
+            <section id="overzicht">
                 <h2>
                     Iconenoverzicht
                 </h2>
 
-                <search class="search-style">
-                    <form action="./iconen.html" id="searchForm">
+                <search class="search-style" hidden>
+                    <form action="./iconen.html#overzicht" id="searchForm">
                         <label>
                             <span>Zoeken</span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
