@@ -216,7 +216,7 @@ main > section:nth-of-type(2) {
 
         display:grid;
         grid-template-columns: repeat(auto-fit, 8rem);
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         gap: var(--spacing-md);
 
