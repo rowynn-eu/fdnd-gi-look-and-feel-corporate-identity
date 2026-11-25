@@ -25,6 +25,7 @@ main > section:nth-of-type(2) {
 
     &:has(input[value="z-a"]:checked) ul {
         direction:rtl;
+        justify-content: end;
     }
 
     .duurzaam, .werkzaken, .burgerzaken, .ondersteuning, .buurtzaken, .meldingen, .informatief {
